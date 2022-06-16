@@ -1,0 +1,23 @@
+{
+  "name": "tapcart-customblock-dev",
+  "version": "1.0.0",
+  "description": "<!-- Couple sentences on what it is -->",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tapcart-Templates/tapcart-customblock-dev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tapcart-Templates/tapcart-customblock-dev/issues"
+  },
+  "homepage": "https://github.com/Tapcart-Templates/tapcart-customblock-dev#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1"
+  }
+}
