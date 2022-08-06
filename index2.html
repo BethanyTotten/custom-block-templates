@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9db6f88f18.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <script type="module" src="scripts.js"></script>
+    <link rel="stylesheet" href="styles2.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
+    <title>Judge Me Widget2</title>
+  </head>
+
+  <body>
+    <div id="codeblock"></div>
+
+    <script id="reviewCarousel" type="text/x-handlebars-template">
+      <div class="full-app-view">
+
+        <section class="product-view">
+          <div class="product-image">
+            <!-- Use product needle-less-serum  -->
+            {{#with product_obj}}
+              <img class="product-image_image" src={{product.image_url}} />
+            {{/with}}
+          </div>
+          <div class="product-info"></div>
+        </section>
+        <section class="cta-group">
+          <div class="variant-pickers">
+            <div class="variant-size-picker"></div>
+            <div class="variant-color-picker"></div>
+
+          </div>
+          <div class="cta-buttons">
+            <button class="cta-addToBag">
+              Add to Bag
+            </button>
+            <button class="cta-applePay">Apple Pay</button>
+          </div>
+        </section>
+        <section class="dropdowns">
+          <div class="product-description-dropdown"></div>
+          <div class="size-guide-dropdown"></div>
+          <div class="shipping-details-dropdown"></div>
+
+          <div class="reviews">
+            <hr />
+            <div class="reviews-dropdown">
+              <section class="reviews-overview-block">
+                <p class="reviews-label">Reviews</p>
+                <p class="reviews-aggregate">{{average_rating}}</p>
+                <i class="fa-solid fa-star-sharp rating-block-star"></i>
+                <i class="fa-solid fa-chevron-right"></i>
+              </section>
+            </div>
+            <div class="reviews-ratings">
+              {{# with ratings}}
+              <div class="rating-5">
+                <p>5</p>
+                <i class="fa-solid fa-star-sharp"></i>
+                <div class="status-bar">
+                  <div class="progress"></div>
+                </div>
+                <div class="total-review-box">
+                  <p class="total-review-number">{{five}}</p>
+                </div>
+              </div>
+              <div class="rating-4">
+                <p>4</p>
+                <i class="fa-solid fa-star-sharp"></i>
+                <div class="status-bar">
+                  <div class="progress"></div>
+                </div>
+                <div class="total-review-box">
+                  <p class="total-review-number">{{four}}</p>
+                </div>
+              </div>
+              <div class="rating-3">
+                <p>3</p>
+                <i class="fa-solid fa-star-sharp"></i>
+                <div class="status-bar">
+                  <div class="progress"></div>
+                </div>
+                <div class="total-review-box">
+                  <p class="total-review-number">{{three}}</p>
+                </div>
+              </div>
+              <div class="rating-2">
+                <p>2</p>
+                <i class="fa-solid fa-star-sharp"></i>
+                <div class="status-bar">
+                  <div class="progress"></div>
+                </div>
+                <div class="total-review-box">
+                  <p class="total-review-number">{{two}}</p>
+                </div>
+              </div>
+              <div class="rating-1">
+                <p>1</p>
+                <i class="fa-solid fa-star-sharp"></i>
+                <div class="status-bar">
+                  <div class="progress"></div>
+                </div>
+                <div class="total-review-box">
+                  <p class="total-review-number">{{one}}</p>
+                </div>
+              </div>
+              {{/ with}}
+            </div>
+            <div class="reviews-carousel">
+              {{#each reviews_obj.reviews}}
+                <div class="reviews-carousel-cell">
+                  <div class="reviews-carousel-cell_header">
+                    <div class="reviews-carousel-cell_stars">
+                      <i class="fa-solid fa-star-sharp"></i>
+                      <i class="fa-solid fa-star-sharp"></i>
+                      <i class="fa-solid fa-star-sharp"></i>
+                      <i class="fa-solid fa-star-sharp"></i>
+                      <i class="fa-solid fa-star-sharp"></i>
+                    </div>
+                    <div class="reviews-carousel-cell_user" label={{@key}}>
+                      {{#each this}}
+                      <p>{{name}}</p>
+                      {{/each}}
+                      <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                  </div>
+                  <div class="reviews-carousel-review">                   
+                    <div class="reviews-carousel_title">
+                      <p>{{title}}</p>
+                    </div>
+                    <div class="reviews-carousel_body">
+                      <p>{{body}}</p>
+                    </div>
+                  </div>
+                </div>
+              {{/each}}
+            </div>
+          </div>
+        </section>
+      </div>
+    </script>
+  </body>
+</html>

@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.full-app-view {
+  /* display: flex; */
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: 380px;
+  height: 1386px;
+  background-color: #ffffff;
+  border: 1px solid rgb(248, 243, 243);
+  margin: auto;
+}
+
+.product-view {
+  margin-top: 40px;
+}
+.product-image {
+  background-color: #82b4ec;
+  width: 375px;
+  /* height: 476px; */
+ 
+}
+.product-image_image {
+  width: 375px;
+  margin-top: 40px;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.product-info {
+  background-color: #FFAF02;
+  height: 70px;
+}
+
+.variant-pickers {
+  display: flex;
+  height: 50px;
+}
+.dropdowns {
+  background-color: #ffffff;
+  width: 365px;
+  height: 500px;
+}
+
+.reviews {
+  position: relative;
+}
+
+hr {
+  height: 1px;
+  width: 350px;
+  margin: auto;
+  color: #e3e3e3;
+}
+.reviews-dropdown {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+
+  padding: 10px;
+  /* margin-top: 150px; */
+  height: 45px;
+  width: 360px;
+  background-color: #ffffff;
+  /* border-top: 1px solid #e3e3e3; */
+}
+
+.reviews-overview-block {
+  display: flex;
+  /* background-color: aquamarine; */
+  align-items: center;
+
+  width: 360px;
+  margin-top: 10px;
+}
+
+.reviews-aggregate {
+  margin-left: 5px;
+}
+
+.fa-star-sharp {
+  color: #454545;
+  margin-left: 6px;
+}
+
+.rating-block-star {
+  margin-left: 4px;
+  font-weight: thin;
+  color: #ffaf02;
+}
+
+
+
+.fa-chevron-right {
+  align-self: center;
+  margin-left: 250px;
+}
+
+.reviews-ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  width: 332px;
+  height: 150px;
+  margin: auto;
+}
+
+.reviews-ratings div {
+  display: flex;
+  /* gap: 10px; */
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-size: 13px;
+  /* background-color: #a7e5e8; */
+  font-family: "Inter", sans-serif;
+  width: 330px;
+  height: 25px;
+}
+
+.reviews-ratings .status-bar {
+  background-color: #E3E3E3;
+  width: 245px;
+  height: 5px;
+  margin-left: 15px;
+  border-radius: 10.5px;
+}
+
+.reviews-ratings .progress {
+  height: 5px;
+  width: 100px;
+  background-color: #545454;
+  border-radius: 20px;
+}
+
+.reviews-ratings .total-review-box {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  position: absolute;
+  right: 0;
+}
+.total-review-number {
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+.reviews-ratings .rating-1 {
+  position: relative
+}
+
+.reviews-ratings .rating-2 {
+  position: relative
+}
+
+.reviews-ratings .rating-3 {
+  position: relative
+}
+
+.reviews-ratings .rating-4 {
+  position: relative
+}
+
+.reviews-ratings .rating-5 {
+  position: relative
+}
+
+/* CTA Buttons */
+
+.cta-buttons {
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+
+.cta-addToBag {
+  justify-content: center;
+  width: 167px;
+  height: 48px;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.cta-applePay {
+  width: 167px;
+  height: 48px;
+  border: 1px solid #212121;
+  border-radius: 4px;
+}
+
+.reviews-carousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.reviews-carousel-cell {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 285px;
+  height: 128px;
+  border: 1px solid #E3E3E3;
+  border-radius: 8px;
+}
+.reviews-carousel-cell_header {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  height: 24px;
+  /* background-color: #edc87a; */
+  margin-top: 5px;
+}
+
+.reviews-carousel-cell_user {
+  display: flex;
+  width: 90px;
+  justify-content: space-between;
+  margin-right: 2%;
+}
+.reviews-carousel-cell_user p {
+  font-size: 12px;
+}
+
+.reviews-carousel-cell_stars .fa-star-sharp{
+  color: #FFAF02;
+}
+
+.reviews-carousel-cell_user .fa-circle-check {
+  color: #008000;
+}
+
+.reviews-carousel-review {
+  /* background-color: coral; */
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 280px;
+  height: 87px;
+  margin-left: 2.5%;
+}
+
+.reviews-carousel_title {
+  /* background-color: #a7e5e8; */
+  width: 253px;
+  height: 24px;
+  font-size: 15px;
+}
+
+.reviews-carousel_body {
+  /* background-color: #21c0c8; */
+  width: 253px;
+  height: 56px;
+  font-size: 10px;
+}

@@ -1,16 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 * {
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  */
+  font-family: "Roboto", sans-serif;
+  background-color: bisque;
 
-  body {
-    position: relative;
-    box-sizing: border-box;
-    padding-left: 0px;
-    padding-right: 0px;
-    font-family: "League Spartan", sans-serif;
-  }
+  /* CSS from Figma */
+  /* font-family: "Circular Std"; */
+  font-style: normal;
+  font-weight: 450;
+  font-size: 15px;
+  line-height: 160%;
+  /* identical to box height, or 24px */
 
-.review-box {
-    width: 375px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 428px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.reviews-header {
+  /* margin-bottom: 15px; */
+  position: relative;
+  background-color: aqua;
+}
+
+.reviews-text {
+  /* font-weight: 100;
+  font-size: 15px;
+  display: inline-block; */
+
+  position: absolute;
+  left: 0%;
+  right: 10.5%;
+  top: 0%;
+  bottom: 0%;
+}
+
+.aggregate {
+  /* display: inline-block;
+  font-weight: 100;
+  font-size: 10px;
+  margin-left: 10px; */
+
+  /* CSS from Figma */
+  position: absolute;
+  left: 21.49%;
+  right: 75.8%;
+  top: 3.67%;
+  bottom: 16.67%;
+}
+
+.fa-thin.fa-star {
+  margin-left: 118px;
+  bottom: -24px;
+  position: absolute;
+}
+
+/* .reviews-text::after {
+  content: "4.5";
+  margin-left: 8px;
+} */
+.reviews-ratings-block {
+  background-color: white;
+  width: 250px;
+  height: 150px;
+}
+
+.reviews-header > div:nth-of-type(1) {
+  margin-top: 20px;
 }
