@@ -26,7 +26,7 @@ This block allows customers to fetch personalized recommendations configured in 
 ### 3. Make some code edits
 The following lines of code in the custom block will need to be edited for the block to work as expected. 
 
-- **[REQUIRED]** Lines 2 (JAVASCRIPT) should be replaced by your side Id provided by Search Spring.
+- **[REQUIRED]** Lines 2 (JAVASCRIPT) should be replaced by your site ID provided by Searchspring.
 
 ### 4. Add a custom font
 Import a custom font to conform to your App's design system by pasting a font link in the 'Import Fonts' field in the 'Settings' tab of the [Custom Blocks Editor](https://app.tapcart.com/custom-blocks). From here, the font will need to be referrenced using `font-family` in your CSS.
